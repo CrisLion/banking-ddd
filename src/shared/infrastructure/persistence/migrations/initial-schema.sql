@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS cities (
 CREATE TABLE IF NOT EXISTS streets (
   id VARCHAR(8) NOT NULL,
   name VARCHAR(45) NOT NULL,
-  city_id VARCHAR(2) NOT NULL,
+  city_id VARCHAR(6) NOT NULL,
   PRIMARY KEY(id),
   UNIQUE KEY UQ_streets_name_city_id(name, city_id),
   KEY IX_streets_city_id(city_id),
