@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: "mysql",
-    url: 'mysql://root:puercoconalas7350@@localhost:3306/dockseeker-ddd',
+    url: 'mysql://root:puercoconalas7350@@localhost:3306/dockseeker-ddd-2',
     migrationsRun: true,
     logging: true,
     timezone: '+00:00',
